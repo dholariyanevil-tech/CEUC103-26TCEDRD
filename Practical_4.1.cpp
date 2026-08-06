@@ -1,5 +1,5 @@
 #include<iostream> // For input-output operations
-#include<iomanip> // For formatted output
+#include<iomanip> // For formatted output (setw, left,etc.)
 using namespace std;
 int main()
 {
