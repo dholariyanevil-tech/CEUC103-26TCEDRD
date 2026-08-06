@@ -2,7 +2,7 @@
 using namespace std; // Use Standard namespace
 int main()
 {
-    //declare variable to store student details
+    // Declare variable to store student details
     int sem;
     string enroll,name,branch;
     long long no;
