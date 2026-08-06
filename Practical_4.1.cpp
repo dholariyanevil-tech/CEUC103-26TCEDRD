@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    // declare variables for students details
+    // Declare variables for students details
     string enroll,name,branch; // Mraks and semester
     int sem,m1,p1,pf1,tm; // Average and percentage
     float avg,per; // Mobile number
@@ -50,7 +50,8 @@ int main()
     cout << left << setw(25) << "Total Marks" << ": " << tm << endl;
     cout << left << setw(25) << "Average Marks" << ": " << avg << endl;
     cout << left << setw(25) << "Percentage" << ": " << per << endl;
-
+    
+    // Display student information summary
     cout << "\n------------------------------------------------------------\n";
     cout << "Student Information";
     cout << "\n------------------------------------------------------------\n";
