@@ -4,10 +4,10 @@ using namespace std;
 int main()
 {
     // Declare variables for students details
-    string enroll,name,branch; // Mraks and semester
-    int sem,m1,p1,pf1,tm; // Average and percentage
-    float avg,per; // Mobile number
-    long long no;
+    string enroll,name,branch; 
+    int sem,m1,p1,pf1,tm; // sem = semester, m1 = math marks, p1 = physics , pf1 = programming foundation marks, tm = total marks
+    float avg,per; // avg = average, per = percentage
+    long long no; // Mobile Number
     // Display system header
     cout<<"*****************************************************************\n";
     cout<<"                STUDENT RECORD MANAGEMENT SYSTEM                \n";
