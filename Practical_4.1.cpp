@@ -1,13 +1,14 @@
-#include<iostream>
-#include<iomanip>
+#include<iostream> // For input-output operations
+#include<iomanip> // For formatted output
 using namespace std;
 int main()
 {
-    string enroll,name,branch;
-    int sem,m1,p1,pf1,tm;
-    float avg,per;
+    // declare variables for students details
+    string enroll,name,branch; // Mraks and semester
+    int sem,m1,p1,pf1,tm; // Average and percentage
+    float avg,per; // Mobile number
     long long no;
-
+    // Display system header
     cout<<"*****************************************************************\n";
     cout<<"                STUDENT RECORD MANAGEMENT SYSTEM                \n";
     cout<<"*****************************************************************\n\n";
@@ -15,18 +16,19 @@ int main()
     cout<<"-----------------------------------------------------------------\n";
     cout<<"Student Registration\n";
     cout<<"-----------------------------------------------------------------\n\n";
+    // Input student deatils 
     cout<<left<<setw(25)<<"Enter Enrollment Number"<<": ";
     cin>>enroll;
     cout<<left<<setw(25)<<"Enter Student Name"<<": ";
-    cin.ignore();
-    getline(cin,name);
+    cin.ignore(); // Clear buffer before getline
+    getline(cin,name); // allows full name with spaces 
     cout<<left<<setw(25)<<"Enter Branch"<<": ";
     cin>>branch;
     cout<<left<<setw(25)<<"Enter Semester"<<": ";
     cin>>sem;
     cout<<left<<setw(25)<<"Enter Mobile Number"<<": ";
     cin>>no;
-
+    // Academic information section
     cout<<"\n--------------------------------------------------------------\n";
     cout<< "Academic Information\n";
     cout<<"-----------------------------------------------------------------\n\n";
@@ -41,10 +43,10 @@ int main()
     cout << "\n------------------------------------------------------------\n";
     cout << "Academic Summary\n";
     cout << "------------------------------------------------------------\n\n";
-    tm = m1 + p1 + pf1;
-    avg = tm / 3.0;
-    per = avg;
-
+    tm = m1 + p1 + pf1; // Total marks
+    avg = tm / 3.0; // Average marks 
+    per = avg; // Percentage 
+    // Display academic results
     cout << left << setw(25) << "Total Marks" << ": " << tm << endl;
     cout << left << setw(25) << "Average Marks" << ": " << avg << endl;
     cout << left << setw(25) << "Percentage" << ": " << per << endl;
@@ -60,7 +62,7 @@ int main()
     cout << "\n------------------------------------------------------------\n";
     cout << "                     Academic Result                           ";
     cout << "\n------------------------------------------------------------\n\n";
-
+    // Pass/Fail logic
     if (per>40)
     {
         cout<<left<<setw(25)<<"Result"<<":"<<"pass"<<endl;
@@ -69,6 +71,6 @@ int main()
     {
         cout<<left<<setw(25)<<"Result"<<":"<<"fail"<<endl;
     }
-
+ return 0; // end of program
 }
 
