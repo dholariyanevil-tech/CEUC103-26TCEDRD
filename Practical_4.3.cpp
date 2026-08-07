@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-        // Delcare variable for student details and marks
+        // Declare variable for student details and marks
         string enroll,name,branch;
         int sem,m1,p1,pf1,tm; // sem = semester, m1 = math marks, p1 = physics, pf1 = programming foundation marks, tm = total marks
         float avg,per; // avg = average marks, per = percentage
