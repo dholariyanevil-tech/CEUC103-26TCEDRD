@@ -39,7 +39,7 @@ int main()
     for(i=0;i<n;i++)
     {
         total=total+score[i];
-        average=((float)average/n);
+        average=(float total/n);
         if (score[i]>highest)
             highest=score[i];
         if (score[i]<lowest)
