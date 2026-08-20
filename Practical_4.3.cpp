@@ -19,15 +19,15 @@ int main()
         cout<<left<<setw(25)<<"Enter Your Choice "<<":";
         cin>> ch;
         // Validate menu choice
-if (ch<1 || ch>5)
-{
-        cout<<"Invalid input"<<endl;
-goto m; // Go back to menu 
-}
-else
-{
-if (ch==1) // Option 1: Register new student
-{
+        if (ch<1 || ch>5)
+        {
+                cout<<"Invalid input"<<endl;
+                goto m; // Go back to menu 
+        }
+        swtich (ch) // Based on the value of 'choice', execute the corresponding case
+        {
+        case 1: // Option 1: Register new student
+        {
         cout<<"-----------------------------------------------------------------\n";
         cout<<"                Student Registration\n";
         cout<<"-----------------------------------------------------------------\n\n";
@@ -44,10 +44,10 @@ if (ch==1) // Option 1: Register new student
         cin>>no;
         cout<<"\nStudent Registered Successfully.\n";
         cout<<"-----------------------------------------------------------------\n";
-goto m;
-}
-else if (ch==2) // Option 2: Display student record
-{
+        goto m;
+        }
+        case 2: // Option 2: Display student record
+        {
         cout << "\n------------------------------------------------------------\n";
         cout << "                   Student Information\n";
         cout << "------------------------------------------------------------\n";
@@ -59,11 +59,11 @@ else if (ch==2) // Option 2: Display student record
         cout << left << setw(25) << "Semester" << ": " << sem << endl;
         cout << left << setw(25) << "Mobile Number" << ": " << no << endl;
         cout<<"-----------------------------------------------------------------\n";
-goto m;
+        goto m;
 
-}
-else if (ch==3) // Option 3: Enter student marks
-    {
+        }
+        case 3: // Option 3: Enter student marks
+        {
         cout<<"\n--------------------------------------------------------------\n";
         cout<<"                Academic Information                             \n";
         cout<<"-----------------------------------------------------------------\n";
@@ -75,69 +75,63 @@ else if (ch==3) // Option 3: Enter student marks
         cin>> pf1;
         cout << "Marks Entered Successfully.\n";
         cout<<"-----------------------------------------------------------------\n";
-goto m;
-
-    }
-else if (ch==4) // Option 4: Display academic result 
-    {
-
-
+        goto m;
+        }
+        case 4: // Option 4: Display academic result 
+        {
         cout << "\n------------------------------------------------------------\n";
         cout << "                   Academic Summary                          \n";
         cout << "------------------------------------------------------------\n";
         tm = m1 + p1 + pf1;
         avg = tm / 3.0;
         per = avg;
-
         cout << left << setw(25) << "Total Marks" << ": " << tm << endl; // Total marks
         cout << left << setw(25) << "Average Marks" << ": " << avg << endl; // Average marks
         cout << left << setw(25) << "Percentage" << ": " << per << endl; // Percentage
-
-
         cout << "\n------------------------------------------------------------\n";
         cout<< "               Academic Result\n";
         cout<<"-----------------------------------------------------------------\n";
         // Pass/Fail logic 
-if (per >=40)
-    {
-        cout << left << setw(25) << "Result"<<":"<<"Pass"<<endl;
-    }
-else
-    {
-        cout << left << setw(25) << "Result"<<":"<<"Fail"<<endl;
-    }
+        if (per >=40)
+        {
+                cout << left << setw(25) << "Result"<<":"<<"Pass"<<endl;
+        }
+        else
+        {
+                cout << left << setw(25) << "Result"<<":"<<"Fail"<<endl;
+        }
         // Grading system
-if (per >=90)
-    {
-        cout<<left<< setw(25)<<"Grade"<<":"<<"O"<<endl;
-        cout<<left<<setw(25)<<"Performance"<<":"<<"Outstanding"<<endl;
-    }
-else if (per >=80 || per <=89)
-    {
-        cout<<left<< setw(25)<<"Grade"<<":"<<"A+"<<endl;
-        cout<<left<<setw(25)<<"Performance"<<":"<<"Excellent"<<endl;
-    }
-else if (per >=70 || per <=79)
-    {
-        cout<<left<< setw(25)<<"Grade"<<":"<<"A"<<endl;
-        cout<<left<<setw(25)<<"Performance"<<":"<<"Very Good"<<endl;
-    }
-else if (per >=60 || per <=69)
-    {
-        cout<<left<< setw(25)<<"Grade"<<":"<<"B+"<<endl;
-        cout<<left<<setw(25)<<"Performance"<<":"<<"Good"<<endl;
-    }
-else if (per >=50 || per <=59)
-    {
-        cout<<left<< setw(25)<<"Grade"<<":"<<"B"<<endl;
-        cout<<left<<setw(25)<<"Performance"<<":"<<"Satisfactory"<<endl;
-    }
-else if (per >=40 || per <= 49)
-    {
-        cout<<left<< setw(25)<<"Grade"<<":"<<"C"<<endl;
-        cout<<left<<setw(25)<<"Performance"<<":"<<"Needs Improvement"<<endl;
-    }
-else
+        if (per >=90)
+        {
+                cout<<left<< setw(25)<<"Grade"<<":"<<"O"<<endl;
+                cout<<left<<setw(25)<<"Performance"<<":"<<"Outstanding"<<endl;
+        }
+        else if (per >=80 || per <=89)
+        {      
+                cout<<left<< setw(25)<<"Grade"<<":"<<"A+"<<endl;
+                cout<<left<<setw(25)<<"Performance"<<":"<<"Excellent"<<endl;
+        }
+        else if (per >=70 || per <=79)
+        {
+                cout<<left<< setw(25)<<"Grade"<<":"<<"A"<<endl;
+                cout<<left<<setw(25)<<"Performance"<<":"<<"Very Good"<<endl;
+        }
+        else if (per >=60 || per <=69)
+        {
+                cout<<left<< setw(25)<<"Grade"<<":"<<"B+"<<endl;
+                cout<<left<<setw(25)<<"Performance"<<":"<<"Good"<<endl;
+        }
+        else if (per >=50 || per <=59)
+        {
+                cout<<left<< setw(25)<<"Grade"<<":"<<"B"<<endl;
+                cout<<left<<setw(25)<<"Performance"<<":"<<"Satisfactory"<<endl;
+        }
+        else if (per >=40 || per <= 49)
+        {
+                cout<<left<< setw(25)<<"Grade"<<":"<<"C"<<endl;
+                cout<<left<<setw(25)<<"Performance"<<":"<<"Needs Improvement"<<endl;
+        }
+        else
     {
         cout<<left<< setw(25)<<"Grade"<<":"<<"F"<<endl;
         cout<<left<<setw(25)<<"Performance"<<":"<<"Failed"<<endl;
