@@ -99,4 +99,11 @@ int main()
     {
         cout<<setw(10)<<(i+1)<<setw(10)<<name[i]<<setw(10)<<score[i]<<endl;
     }
+    cout<<"\n--------------------------------------"<<endl;
+    cout<<"Top Three Performers"<<endl;
+    for(i=0;i<3;i++)
+    {
+        cout<<(i+1)<<"."<<name[i]<<setw(7)<<"-"<<score[i]<<endl;
+    }
+    return 0;
 }
