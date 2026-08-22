@@ -1,3 +1,4 @@
+// This is how to use Array is C++
 #include<iostream>
 #include<iomanip>
 using namespace std;
