@@ -66,6 +66,7 @@ int main()
             cout<<setw(10)<<"ID"<<":"<<id[i]<<endl;
             cout<<setw(10)<<"Name"<<":"<<name[i]<<endl;
             cout<<setw(10)<<"Score"<<":"<<score[i]<<endl;
+            found=true;
         }
 
     }
