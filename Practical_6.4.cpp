@@ -75,37 +75,44 @@ int main()
     cout<<"\nEnter size of first sorted array: ";
     cin>>n1;
     cout<<"Enter elements of first sorted array:\n";
-    for(int i=0; i<n1; i++)
-        cin >> arr1[i];
-
+    for(i=0; i<n1; i++)
+        {
+            cin >> arr1[i];
+        }
     cout<<"Enter size of second sorted array: ";
     cin>>n2;
 
     cout<<"Enter elements of second sorted array:\n";
-    for(int i=0; i<n2; i++)
-        cin >> arr2[i];
+    for(i=0; i<n2; i++)
+        {
+            cin >> arr2[i];
+        }
     // Merge process
-    while(i<n1 && j<n2)
-    {
-        if(arr1[i] < arr2[j]) arr3[k++] = arr1[i++];
-        else arr3[k++] = arr2[j++];
+    while (i < n1 && j < n2) {
+        if (arr1[i] < arr2[j]) {
+            arr3[k++] = arr1[i++];
+        } else {
+            arr3[k++] = arr2[j++];
+        }
     }
-    while(i<n1) arr3[k++] = arr1[i++];
-    while(j<n2) arr3[k++] = arr2[j++];
-
+    while (i < n1) arr3[k++] = arr1[i++];
+    while (j < n2) arr3[k++] = arr2[j++];
     // Display arrays
     cout << "\nFirst Array: ";
-    for(int i=0; i<n1; i++)
-        cout << arr1[i] << " ";
-
+    for(i=0; i<n1; i++)
+        {
+            cout << arr1[i] << " ";
+        }
     cout << "\nSecond Array: ";
-    for(int i=0; i<n2; i++)
-        cout << arr2[i] << " ";
-
+    for(i=0; i<n2; i++)
+        {
+            cout << arr2[i] << " ";
+        }
     cout << "\nMerged Sorted Array: ";
-    for(int i=0; i<n1+n2; i++)
-        cout << arr3[i] << " ";
-
+    for(i=0; i<n1+n2; i++)
+        {
+            cout << arr3[i] << " ";
+        }
     return 0;
 }
 
