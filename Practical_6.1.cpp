@@ -50,4 +50,6 @@ int main()
     cout<<"Average :"<<average<<endl;
     cout<<"Highest score :"<<highest<<endl;
     cout<<"Lowest score :"<<lowest<<endl;
+
+    return 0;
 }
