@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int i,j,n,m,o,p;
+    int i,j,n,m,o,p,q;
     cin>>n;
     for(i=1;i<=n;i++)
     {
@@ -60,10 +60,10 @@ int main()
         cout<<endl;
     }
     cin>>p;
-    for(i=1;i<=n;i++)
+    for(i=1;i<=p;i++)
     {
         // print spaces first
-        for(j=1;j<=n-i;j++)
+        for(j=1;j<=p-i;j++)
         {
             cout<<"  ";  // two spaces for alignment
         }
@@ -74,5 +74,49 @@ int main()
         }
         cout<<endl;
     }
+    cin>>q
+    for(i=1; i<=q; i++)
+    {
+        // spaces
+        for(j=1; j<=q-i; j++)
+        {
+            cout << " ";
+        }
 
+        // increasing numbers
+        for(j=1; j<=i; j++)
+        {
+            cout << j << " ";
+        }
+
+        // decreasing numbers
+        for(j=i-1; j>=1; j--)
+        {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    cin>>r;
+    for(i=1; i<=r; i++)
+    {
+        // spaces
+        for(j=1; j<=r-i; j++)
+        {
+            cout << " ";
+        }
+
+        // increasing alphabets
+        for(j=1; j<=i; j++)
+        {
+            cout << char('A' + j - 1) << " ";
+        }
+
+        // decreasing alphabets
+        for(j=i-1; j>=1; j--)
+        {
+            cout << char('A' + j - 1) << " ";
+        }
+        cout << endl;
+    }
+    return 0;
 }
