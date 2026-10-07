@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int i,j,n,m,o,p,q;
+    int i,j,n,m,o,p,q,r;
     cin>>n;
     for(i=1;i<=n;i++)
     {
@@ -74,7 +74,7 @@ int main()
         }
         cout<<endl;
     }
-    cin>>q
+    cin>>q;
     for(i=1; i<=q; i++)
     {
         // spaces
