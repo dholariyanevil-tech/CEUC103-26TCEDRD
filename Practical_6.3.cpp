@@ -14,14 +14,14 @@ int main()
     string enroll[100], name[100], grade[100];
     float perc[100];
     cout << "Enter Student Details\n";
-    for (int i = 0; i < n; i++) 
+    for (i = 0; i < n; i++) 
     {
         cin >> enroll[i] >> name[i] >> perc[i] >> grade[i];
     }
 
     cout << "--------------------------------------------\n";
     cout << "Current Student Records\n";
-    for (int i = 0; i < n; i++) 
+    for (i = 0; i < n; i++) 
     {
         cout << enroll[i] << " " << name[i] << " " << perc[i] << " " << grade[i] << endl;
     }
@@ -32,7 +32,7 @@ int main()
     int pos;
     cout << "Enter Position : ";
     cin >> pos;
-    for (int i = n; i > pos; i--) 
+    for (i = n; i > pos; i--) 
     {
         enroll[i] = enroll[i - 1];
         name[i] = name[i - 1];
@@ -52,7 +52,8 @@ int main()
 
     cout << "--------------------------------------------\n";
     cout << "Updated Student Records\n";
-    for (int i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) 
+    {
         cout << enroll[i] << " " << name[i] << " " << perc[i] << " " << grade[i] << endl;
     }
     cout << "--------------------------------------------\n";
@@ -62,7 +63,7 @@ int main()
     string enrollSearch;
     cout << "Enter Enrollment Number : ";
     cin >> enrollSearch;
-    for (int i = 0; i < n; i++) 
+    for ( i = 0; i < n; i++) 
     {
         if (enroll[i] == enrollSearch) 
         {
@@ -77,7 +78,7 @@ int main()
 
     cout << "--------------------------------------------\n";
     cout << "Updated Student Records\n";
-    for (int i = 0; i < n; i++) 
+    for (i = 0; i < n; i++) 
     {
         cout << enroll[i] << " " << name[i] << " " << perc[i] << " " << grade[i] << endl;
     }
@@ -87,7 +88,7 @@ int main()
     cout << "Delete Student Record\n";
     cout << "Enter Position : ";
     cin >> pos;
-    for (int i = pos; i < n - 1; i++) 
+    for (i = pos; i < n - 1; i++) 
     {
         enroll[i] = enroll[i + 1];
         name[i] = name[i + 1];
@@ -98,7 +99,7 @@ int main()
     cout << "Record Deleted Successfully.\n";
     cout << "--------------------------------------------\n";
     cout << "Final Student Records\n";
-    for (int i = 0; i < n; i++) 
+    for (i = 0; i < n; i++) 
     {
         cout << enroll[i] << " " << name[i] << " " << perc[i] << " " << grade[i] << endl;
     }
