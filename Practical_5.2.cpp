@@ -162,27 +162,27 @@ int main()
                         cout << left << setw(25) << "Grade" << ":" << "O" << endl;
                         cout << left << setw(25) << "Performance" << ":" << "Outstanding" << endl;
                     }
-                    else if (per >= 80)
+                    else if (per >= 80 && per <= 89)
                     {
                         cout << left << setw(25) << "Grade" << ":" << "A+" << endl;
                         cout << left << setw(25) << "Performance" << ":" << "Excellent" << endl;
                     }
-                    else if (per >= 70)
+                    else if (per >= 70 && per <=79)
                     {
                         cout << left << setw(25) << "Grade" << ":" << "A" << endl;
                         cout << left << setw(25) << "Performance" << ":" << "Very Good" << endl;
                     }
-                    else if (per >= 60)
+                    else if (per >= 60 && per <=69)
                     {
                         cout << left << setw(25) << "Grade" << ":" << "B+" << endl;
                         cout << left << setw(25) << "Performance" << ":" << "Good" << endl;
                     }
-                    else if (per >= 50)
+                    else if (per >= 50 && per <=59)
                     {
                         cout << left << setw(25) << "Grade" << ":" << "B" << endl;
                         cout << left << setw(25) << "Performance" << ":" << "Satisfactory" << endl;
                     }
-                    else if (per >= 40)
+                    else if (per >= 40 && per <=49)
                     {
                         cout << left << setw(25) << "Grade" << ":" << "C" << endl;
                         cout << left << setw(25) << "Performance" << ":" << "Needs Improvement" << endl;
