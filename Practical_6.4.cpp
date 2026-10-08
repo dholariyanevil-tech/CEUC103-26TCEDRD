@@ -88,10 +88,13 @@ int main()
             cin >> arr2[i];
         }
     // Merge process
-    while (i < n1 && j < n2) {
-        if (arr1[i] < arr2[j]) {
+    while (i < n1 && j < n2) 
+    {
+        if (arr1[i] < arr2[j]) 
+        {
             arr3[k++] = arr1[i++];
-        } else {
+        } else 
+        {
             arr3[k++] = arr2[j++];
         }
     }
